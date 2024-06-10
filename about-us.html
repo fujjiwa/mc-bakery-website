@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Materialize CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <!-- Font Awesome CDN -->
+    <script
+      src="https://kit.fontawesome.com/c3fe2a9b2e.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Font Awesome CDNJS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- CSS Main -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Google Icons -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <!-- Title -->
+    <title>About Us - MC Bakery</title>
+  </head>
+
+  <body>
+    <!-- START -->
+
+    <!-- Navigation Bar -->
+    <nav class="nav-wrapper navbar-fixed z-depth-0">
+      <!-- Brand Logo -->
+      <a href="index.html" class="left brand-logo" alt="MC Bakery Logo">
+        <img
+          src="/imgs/logo.png"
+          class="responsive-img brand-img hide-on-med-and-down"
+          onmouseover="this.src='/imgs/logo-hover.png'"
+          onmouseout="this.src='/imgs/logo.png'"
+        />
+      </a>
+      <a class="sidenav-trigger" data-target="mobile-demo">
+        <img
+          src="/imgs/logo.png"
+          class="menu-img responsive-img"
+          onmouseover="this.src='/imgs/logo-hover.png'"
+          onmouseout="this.src='/imgs/logo.png'"
+        />
+      </a>
+      <!-- Center Navlinks -->
+      <ul class="hide-on-med-and-down center-nav">
+        <li>
+          <a href="index.html#products">Products</a>
+        </li>
+        <li>
+          <a href="about-us.html">About Us</a>
+        </li>
+        <li>
+          <a href="visit-us.html">Visit Us</a>
+        </li>
+        <li>
+          <a href="#hours&contact">Hours & Contact</a>
+        </li>
+      </ul>
+      <!-- Cart Icon -->
+      <a href="#">
+        <img
+          src="/imgs/cart.png"
+          class="cart-icon"
+          alt="Cart Icon"
+          onmouseover="this.src='/imgs/cart-hover.png'"
+          onmouseout="this.src='/imgs/cart.png'"
+        />
+      </a>
+      <!-- Sidenav Structure -->
+      <ul class="sidenav" id="mobile-demo">
+        <li>
+          <a href="index.html#products">Products</a>
+        </li>
+        <li>
+          <a href="about-us.html">About Us</a>
+        </li>
+        <li>
+          <a href="visit-us.html">Visit Us</a>
+        </li>
+        <li>
+          <a href="#hours&contact">Hours & Contact</a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="" alt="" />
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- About Us -->
+    <section id="about-us" class="about-us">
+      <div class="fullscreen-bg">
+        <!-- Background Image -->
+        <img
+          src="/imgs/abt.jpg"
+          alt="Background Image"
+          class="fullscreen-bg__image"
+        />
+        <div class="fullscreen-bg__text">
+          <h1>About Us</h1>
+          <p>
+            MC Bakery, born from Maria Clarice's dream, brings artisanal
+            delights to life. Join us in savoring moments and creating memories.
+            Welcome to MC Bakery.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- History Section -->
+    <section id="history" class="history">
+      <div class="abt-container">
+        <div class="row">
+          <div class="col s12 m6">
+            <!-- Image -->
+            <img
+              src="/imgs/abt-1.jpg"
+              alt="History Image 1"
+              class="responsive-img"
+            />
+          </div>
+          <div class="col s12 m6">
+            <!-- Text -->
+            <h2>Our History</h2>
+            <p>
+              Maria Clarice, driven by a deep love for baking, turned her
+              family's recipes into the foundation of MC Bakery. From her
+              grandmother's kitchen to a community staple, Maria's passion for
+              quality and tradition continues to shape our bakery's legacy.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reversed History Section -->
+    <section id="reversed-history" class="history reversed">
+      <div class="container abt-container">
+        <div class="row">
+          <div class="col s12 m6">
+            <!-- Text -->
+            <h2>MC Bakery</h2>
+            <p>
+              MC Bakery swiftly became synonymous with delectable treats and
+              exceptional service, reflecting a dedication to craft and a
+              passion for delighting customers, standing today as a cherished
+              name in the industry for crafting unforgettable experiences, one
+              delicious bite at a time.
+            </p>
+          </div>
+          <div class="col s12 m6">
+            <!-- Image -->
+            <img
+              src="/imgs/abt-2.jpg"
+              alt="History Image 2"
+              class="responsive-img"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Unique Features Section -->
+    <section id="unique-features" class="unique-features">
+      <div class="fullscreen-bg">
+        <!-- Background Image -->
+        <img
+          src="/imgs/abt-3.jpg"
+          alt="Background Image"
+          class="fullscreen-bg__image"
+        />
+        <div class="fullscreen-bg__text">
+          <h2>Unique Features</h2>
+          <div class="row">
+            <div class="col s12 m6">
+              <!-- Unique Feature 1 -->
+              <div class="feature">
+                <i class="fa-solid fa-kitchen-set"></i>
+                <p><strong>Signature Creations</strong></p>
+                <p>
+                  Discover our unique creations, expertly crafted to delight
+                  your taste buds.
+                </p>
+              </div>
+              <!-- Unique Feature 2 -->
+              <div class="feature">
+                <i class="fa-solid fa-pencil"></i>
+                <p><strong>Customization Options</strong></p>
+                <p>
+                  Personalize your order for any occasion with our customizable
+                  options.
+                </p>
+              </div>
+            </div>
+            <div class="col s12 m6">
+              <!-- Unique Feature 3 -->
+              <div class="feature">
+                <i class="fa-solid fa-seedling"></i>
+                <p><strong>Local Ingredients</strong></p>
+                <p>
+                  We use fresh, locally sourced ingredients to ensure the
+                  highest quality in every bite.
+                </p>
+              </div>
+              <!-- Unique Feature 4 -->
+              <div class="feature">
+                <i class="fa-solid fa-handshake-simple"></i>
+                <p><strong>Community Engagement</strong></p>
+                <p>
+                  We're committed to fostering community connections through
+                  events and partnerships.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="hours&contact">
+      <div class="footer-row">
+        <div class="footer-column">
+          <img src="/imgs/logo.png" alt="MC Bakery Logo" class="footer-logo" />
+          <h3>MC Bakery</h3>
+          <ul class="store-hrs">
+            <li><strong>STORE HOURS</strong></li>
+            <li>Monday - Friday: 8:00 AM - 8:00 PM</li>
+            <li>Saturday: 8:00 AM - 6:00 PM</li>
+            <li>Sunday: Closed</li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <ul class="footer-select">
+            <li><a href="#!">FAQ</a></li>
+            <li><a href="#!">Press</a></li>
+            <li><a href="#!">Gift Cards</a></li>
+            <li><a href="#!">Subscription</a></li>
+            <li><a href="#!">Help Center</a></li>
+            <li><a href="#!">Privacy Policy</a></li>
+            <li><a href="#!">Terms of Service</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <ul class="footer-contact">
+            <li><strong>Main Branch:</strong></li>
+            <li>123 Main Street BGC, Manila, Philippines</li>
+            <li><strong>Contact Us:</strong></li>
+            <li>
+              Phone:
+              <a class="footer-num" href="tel:+1234567890">(123) 456-7890</a>
+            </li>
+            <li>
+              Landline:
+              <a class="footer-num" href="tel:+6321234567">(02) 123-4567</a>
+            </li>
+            <li>
+              Email:
+              <a class="footer-email" href="mailto:info@mcbakery.com"
+                >info@mcbakery.com</a
+              >
+            </li>
+          </ul>
+          <div class="social-icons">
+            <a href="https://www.facebook.com/MCBakery" target="_blank"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+            <a href="https://www.instagram.com/MCBakery" target="_blank"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a href="https://www.twitter.com/MCBakery" target="_blank"
+              ><i class="fa-brands fa-x-twitter"></i
+            ></a>
+            <a href="https://www.pinterest.com/MCBakery" target="_blank"
+              ><i class="fa-brands fa-pinterest"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 MC Bakery. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <!-- END -->
+
+    <!-- Materialize Javascript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <!-- JavaScript Main -->
+    <script src="script.js"></script>
+
+    <script></script>
+  </body>
+</html>

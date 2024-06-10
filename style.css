@@ -1,0 +1,772 @@
+@import url('https://fonts.googleapis.com/css2?family=Supermercado+One&family=Arbutus+Slab&family=Poppins&display=swap');
+
+
+/* ------------------------- ABOUT US ------------------------- */
+
+body{
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(20, 20, 20);
+}
+
+.nav-wrapper{
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 160px;
+  padding: 60px;
+  padding-top: 60px;
+  background-color: transparent;
+}
+
+/* Navbar Color Change */
+.nav-wrapper.scrolled {
+  background: linear-gradient(to bottom, rgb(15, 15, 15), transparent)!important;
+  transition: background-color 600ms ease-in-out;
+}
+
+/* Brand Logo */
+.brand-img{
+  width: 110px;
+  height: auto; 
+  max-height: 180px; 
+  display: inline-block;
+  overflow: hidden;
+  filter: drop-shadow(0px 4px 10px rgba(237, 226, 102, 0.174));
+}
+
+/* Sidenav Icon */
+.menu-img{
+  width: 130px;
+  height: auto; 
+  max-height: 140px; 
+  margin-top: -24px;
+  margin-left: -24px;
+  display: inline-block;
+  overflow: hidden;
+  filter: drop-shadow(0px 4px 10px rgba(237, 226, 102, 0.174));
+}
+
+/* Hover Swap */
+.brand-img:hover{
+  display: inline-block;
+  overflow: hidden;
+  filter: drop-shadow(0px 2px 10px rgba(252, 205, 50, 0.373));
+};
+.menu-img:hover{
+  display: inline-block;
+  overflow: hidden;
+  filter: drop-shadow(0px 2px 10px rgba(252, 205, 50, 0.373));
+}
+
+/* Center Navlinks */
+.center-nav {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.center-nav li a {
+  font-size: 22px;
+  font-family: "Supermercado One";
+  color: rgb(255, 243, 245);
+  text-shadow: 0px 2px 10px rgba(255, 232, 243, 0.525);
+  margin: 28px;
+}
+.center-nav li a:hover{
+  background-color: transparent;
+  color: rgb(255, 202, 103);
+  text-shadow: 0px 2px 10px rgba(209, 173, 53, 0.404);
+}
+
+
+/* Cart Icon */
+.cart-icon{
+  display: flex;
+  margin-left: -84px;
+  margin-right: 28px;
+  margin-top: 10px;
+  width: 60px;
+  height: auto; 
+  max-height: 180px; 
+  display: inline-block;
+  overflow: hidden;
+  filter: drop-shadow(0px 2px 10px rgba(255, 235, 245, 0.597));
+}
+.cart-icon:hover{
+  display: inline-block;
+  overflow: hidden;
+  filter: drop-shadow(0px 6px 14px rgba(252, 205, 50, 0.444)); 
+}
+
+/* Hide Cart when Menu Icon is clicked*/
+.menu-open .cart-icon {
+  display: none; 
+}
+
+/* Sidenav */
+.sidenav {
+  background-color:  rgba(7, 7, 7, 0.829);
+}
+.sidenav li a{
+  font-size: 16px;
+  font-family: "Supermercado One";
+  color: rgb(255, 239, 239);
+  margin-top: 28px;
+}
+.sidenav li a:hover{
+  color: rgb(255, 192, 92);
+  text-shadow: rgba(255, 206, 128, 0.668);
+}
+
+
+/* Slider */
+.carousel-slider.fullscreen {
+  height: 100vh; 
+}
+
+.slider-item {
+  height: 100vh; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider-item .card {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.slider-item .card-image img {
+  width: 100%;
+  height: auto;
+  max-height: 100vh;
+  object-fit: cover;
+}
+
+
+/* Text Overlay */
+.text-overlay {
+  position: absolute;
+  z-index: 1; 
+}
+
+.text-overlay .flow-text{
+  font-size: 44px;
+  font-family: "Arbutus Slab";
+  line-height: 1.5;
+  margin-bottom: 16px;
+}
+
+/* Slider Content 1 */
+#con-1{
+  top: 28%; 
+  left: 10%; 
+  text-align: left;
+  color: rgb(255, 232, 189);
+}
+
+/* Slider Content 2 */
+#con-2{
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  align-items: center;
+  color: rgb(255, 242, 226);
+  text-shadow: 0px 2px 10px rgb(56, 44, 0);
+}
+
+#con-2{
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  align-items: center;
+  color: rgb(255, 242, 226);
+  text-shadow: 0px 2px 10px rgb(0, 0, 0);
+}
+
+/* Slider Content 3 */
+#con-3{
+  top: 28%; 
+  right: 10%; 
+  text-align: right;
+  color: rgb(255, 242, 226);
+  text-shadow: 0px 2px 10px rgb(56, 44, 0);
+}
+
+
+/* Oder Button */
+#orderBtn{
+  background-color: transparent;
+  border: 2px solid rgb(255, 232, 189);
+  border-radius: 12px;
+  color: rgb(255, 232, 189);
+  font-family: "Poppins";
+  font-weight: 600;
+}
+
+#orderBtn:hover{
+  background-color: rgb(247, 187, 76);
+  border: 2px solid rgb(247, 197, 76);
+  border-radius: 12px;
+  color: rgb(34, 34, 34);
+  font-weight: 600;
+}
+
+/* Visit Us Button */
+#visitBtn{
+  background-color: rgb(30, 30, 30);
+  border: 2px solid rgb(30, 30, 30);
+  border-radius: 12px;
+  color: rgb(255, 208, 167);
+  font-family: "Poppins";
+  font-weight: 600;
+}
+#visitBtn:hover{
+  background-color: rgb(247, 187, 76);
+  border: 2px solid rgb(247, 197, 76);
+  border-radius: 12px;
+  color: rgb(23, 23, 23);
+  font-weight: 600;
+}
+
+/* Learn More Button */
+#learnBtn{
+  background-color: transparent;
+  border: 2px solid rgb(255, 232, 189);
+  border-radius: 12px;
+  color: rgb(255, 232, 189);
+  font-family: "Poppins";
+  font-weight: 600;
+}
+#learnBtn:hover{
+  background-color: rgb(247, 187, 76);
+  border: 2px solid rgb(247, 197, 76);
+  border-radius: 12px;
+  color: rgb(34, 34, 34);
+  font-weight: 600;
+}
+
+/* Our Products */
+.prod-container #prod-title {
+  font-family: "Supermercado One";
+  color: rgb(52, 27, 11);
+  font-size: 44px;
+  background-color: rgb(255, 209, 144, 0.9);
+  padding: 6px 0;
+  border-radius: 14px;
+}
+
+/* Products Carousel */
+.prod-container {
+  position: relative;
+  padding: 120px 0;
+  background-image: url('/imgs/bg-1.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.prod-carousel .carousel-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 28px;
+}
+
+.card {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.card .prod-item {
+  position: relative;
+  width: 100%;
+}
+
+.card img {
+  max-width: 100%; 
+  height: auto;
+}
+
+.prod-item .card-content {
+  width: 100%;
+  padding: 12px;
+  right: 20px;
+  bottom:20px;
+  box-sizing: border-box;
+}
+
+.prod-item .card-title {
+  font-family: "Arbutus Slab", sans-serif;
+  font-weight: bold;
+  color: rgb(30, 30, 30);
+  margin-bottom: 10px;
+}
+
+
+/* Product Carousel Control Buttons */
+.control-prev,
+.control-next {
+  position: absolute;
+  top: 65%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  transition: color 0.3s ease-in-out;
+  font-size: 24px;
+}
+.control-prev {
+  left: 320px;
+}
+.control-next {
+  right: 320px;
+}
+.control-prev:hover i,
+.control-next:hover i {
+  color: rgba(255, 183, 49, 0.9);
+}
+.control-prev i,
+.control-next i {
+  color: rgba(255, 243, 209, 0.7);
+  font-size: 36px;
+  text-shadow:  0px 2px 10px rgb(0, 0, 0);
+}
+
+/* Delivery & Pickup Options */
+.dp-container{
+  position: relative;
+  padding: 120px 0;
+  background-image: url('/imgs/bg-2.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.dp-container .card{
+  background-color: rgba(255, 229, 181, 0.9);
+  border-radius: 20px;
+}
+
+.dp-title-con{
+  padding-top: 8px;
+}
+.dp-title{
+  font-family: "Supermercado One";
+  color: rgb(52, 27, 11);
+  font-size: 44px;
+}
+
+.dp-desc-con{
+  margin-top: -20px;
+  padding-bottom: 30px;
+}
+.dp-desc{
+  font-family: "Arbutus Slab";
+  font-size: 20px;
+}
+
+.row{
+  padding-bottom: 50px;
+}
+.dp-grid img{
+  border-radius: 6px;
+}
+.dp-grid p{
+  font-family: "Poppins";
+  font-weight: 700;
+  font-size: 18px;
+  text-align: center;
+}
+
+/* Footer styles */
+.footer {
+  background-color: rgb(26, 26, 26);
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 20px 120px;
+}
+
+/* Column 1 */
+.footer-logo {
+  max-width: 150px;
+}
+
+.footer h3 {
+  font-family: "Supermercado One", serif;
+  font-size: 32px;
+  margin-top: -10px;
+  margin-bottom: 40px;
+}
+
+.footer-column {
+  flex: 1;
+  max-width: 300px;
+  margin-right: 40px;
+}
+
+.footer ul li {
+  margin: 10px 0;
+  font-size: 17px;
+}
+
+.footer-column ul li strong{
+ color: rgba(255, 183, 89, 0.93);
+}
+
+.footer ul li a {
+  color: rgb(255, 216, 159);
+  font-family: "Poppins";
+}
+
+/* Column 2 */
+.footer-column .footer-select{
+  text-align: left;
+  line-height: 2.1;
+}
+
+.footer ul li a:hover {
+  color: white;
+}
+
+/* Column 3 */
+.footer-column .footer-contact{
+  text-align: left;
+  line-height: 1.8;
+}
+
+.footer .footer-num{
+  color: rgb(139, 174, 255);
+}
+
+.footer .footer-email{
+  color: rgb(114, 221, 217);
+}
+
+.footer .social-icons {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.footer .social-icons a{
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.footer .social-icons a {
+  color: rgb(255, 204, 128);
+  margin: 0 10px;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.footer .social-icons a:hover {
+  color: white;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgb(68, 68, 68);
+  padding-top: 20px;
+  margin-top: 20px;
+}
+
+.footer-bottom p {
+  margin: 0;
+  font-family: "Poppins";
+}
+
+
+
+/* Responsiveness */
+@media (max-width: 998px) {
+  .brand-logo {
+    display: none !important; 
+  }
+  .text-overlay .flow-text {
+    font-size: 32px;
+  }
+  #orderBtn,
+  #visitBtn,
+  #learnBtn {
+    font-size: 14px;
+    padding: 8px 16px;
+    margin: 10px;
+    line-height: normal; 
+  }
+  .prod-container #prod-title {
+    font-size: 28px;
+  }
+  .prod-item {
+    width: 90%;
+    margin: 0 5px;
+  }
+  .carousel-control-prev,
+  .carousel-control-next {
+    font-size: 18px;
+  }
+  .prod-item {
+    width: 90%;
+    height: 300px; 
+    margin: 0 5px;
+    flex-direction: column;
+  }
+  .prod-item img {
+    width: 100%;
+    height: 50%; 
+  }
+  .prod-item .card-content {
+    width: 100%;
+    height: 50%; 
+    margin-top: 10px;
+  }
+  .control-prev i,
+  .control-next i{
+    font-size:28px;
+  }
+  .control-prev{
+  left: 40px;
+  }
+  .control-next {
+  right: 40px;
+  }
+}
+
+
+
+/* ------------------------- ABOUT US ------------------------- */
+
+.abt-container {
+  width: 80%;
+  margin: auto;
+}
+
+.row {
+  margin-bottom: 20px;
+}
+
+/* About Us Section */
+.about-us {
+  text-align: center;
+}
+
+.about-us h1{
+  font-size: 88px;
+  font-family: "Supermercado One";
+  color: rgb(255, 208, 167);;
+  text-shadow:  0px 2px 10px rgba(86, 45, 5, 0.805);
+}
+
+.about-us p{
+  font-size: 22px;
+  font-family: "Arbutus Slab";
+  color: rgb(255, 246, 239);;
+  text-shadow:  0px 2px 10px rgba(116, 67, 11, 0.695);
+}
+
+.fullscreen-bg {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.fullscreen-bg__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.fullscreen-bg__text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+/* History Section */
+.history{
+  margin: 120px 0;
+}
+
+.history h2 {
+  font-size: 62px;
+  font-family: "Supermercado One";
+  color: rgb(255, 208, 167);;
+  text-shadow:  0px 2px 10px rgba(86, 45, 5, 0.805);
+}
+
+.history img {
+  max-width: 100%;
+  border-radius: 20px;
+}
+
+.history p{
+  padding: 8px 24px;
+  font-size: 20px;
+  line-height: 1.8;
+  font-family: "Arbutus Slab";
+  color: rgb(255, 246, 239);;
+  text-shadow:  0px 2px 10px rgba(116, 67, 11, 0.695);
+}
+
+.history .col{
+  text-align: center;
+}
+
+/* Reversed History Section */
+.reversed{
+  margin-top: -80px;
+}
+
+.reversed .col {
+  text-align: center;
+}
+
+.reversed .col img {
+  order: 2;
+}
+
+.reversed .col p {
+  order: 1;
+}
+
+/* Unique Features Section */
+.unique-features h2{
+  font-size: 62px;
+  font-family: "Supermercado One";
+  color: rgb(255, 208, 167);;
+  text-shadow:  0px 2px 10px rgba(86, 45, 5, 0.805);
+}
+
+.unique-features .row{
+  margin-top: 80px;
+}
+
+.unique-features {
+  text-align: center;
+  color: white;
+}
+
+.feature {
+  margin-bottom: 20px;
+}
+
+.feature strong{
+  font-size: 28px;
+  font-family: "Arbutus Slab";
+  color: rgb(255, 208, 167);;
+  text-shadow:  0px 2px 10px rgba(86, 45, 5, 0.805);
+}
+
+.feature i {
+  font-size: 56px;
+  margin-bottom: 10px;
+}
+
+.feature p{
+  font-size: 16px;
+  font-family: "Poppins";
+  color: rgb(255, 251, 248);;
+  text-shadow:  0px 2px 10px rgba(86, 45, 5, 0.805);
+}
+
+
+/* ------------------------- VISIT US ------------------------- */
+
+.visit-us {
+  text-align: center;
+}
+
+.visit-us h1{
+  font-size: 88px;
+  font-family: "Supermercado One";
+  color: rgb(255, 208, 167);;
+  text-shadow:  0px 2px 10px rgba(86, 45, 5, 0.805);
+}
+
+.visit-us .fullscreen-bg p{
+  font-size: 22px;
+  font-family: "Arbutus Slab";
+  color: rgb(255, 246, 239);;
+  text-shadow:  0px 2px 10px rgba(116, 67, 11, 0.695);
+}
+
+.visit-us .row{
+ padding-top: 94px;
+ padding-bottom: 40px;
+ padding-right: 50px;
+ padding-left: 50px;
+}
+
+.location {
+  position: relative;
+  overflow: hidden;
+  height: 550px;
+  display: inline-block;
+  overflow: hidden;
+  filter: drop-shadow(0px 2px 12px rgba(53, 22, 4, 0.674));
+}
+
+.location:hover {
+  filter: drop-shadow(0px 2px 18px rgba(255, 202, 171, 0.674));
+}
+
+.location img {
+  width: 100%;
+  height: 100%; 
+  object-fit: cover;
+  border-radius: 10px;
+  
+}
+
+.location .overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(to top, rgba(147, 70, 12, 0.662), transparent);
+  color: #fff;
+  padding: 10px;
+  text-align: left;
+  border-radius: 10px;
+}
+
+.location .overlay h3 {
+  font-size: 30px;
+  font-weight: 600;
+  font-family: "Arbutus Slab";
+  color: rgb(255, 230, 213);;
+  text-shadow:  0px 2px 10px rgba(37, 22, 4, 0.807);
+}
+
+.location .overlay p {
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "Poppins";
+  color: rgb(255, 230, 213);;
+  text-shadow:  0px 2px 10px rgba(37, 22, 4, 0.807);
+}

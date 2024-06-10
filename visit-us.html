@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Materialize CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <!-- Font Awesome CDN -->
+    <script
+      src="https://kit.fontawesome.com/c3fe2a9b2e.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Font Awesome CDNJS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- CSS Main -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Google Icons -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <!-- Title -->
+    <title>Visit Us - MC Bakery</title>
+  </head>
+
+  <body>
+    <!-- START -->
+
+    <!-- Navigation Bar -->
+    <nav class="nav-wrapper navbar-fixed z-depth-0">
+      <!-- Brand Logo -->
+      <a href="index.html" class="left brand-logo" alt="MC Bakery Logo">
+        <img
+          src="/imgs/logo.png"
+          class="responsive-img brand-img hide-on-med-and-down"
+          onmouseover="this.src='/imgs/logo-hover.png'"
+          onmouseout="this.src='/imgs/logo.png'"
+        />
+      </a>
+      <a class="sidenav-trigger" data-target="mobile-demo">
+        <img
+          src="/imgs/logo.png"
+          class="menu-img responsive-img"
+          onmouseover="this.src='/imgs/logo-hover.png'"
+          onmouseout="this.src='/imgs/logo.png'"
+        />
+      </a>
+      <!-- Center Navlinks -->
+      <ul class="hide-on-med-and-down center-nav">
+        <li>
+          <a href="index.html#products">Products</a>
+        </li>
+        <li>
+          <a href="about-us.html">About Us</a>
+        </li>
+        <li>
+          <a href="visit-us.html">Visit Us</a>
+        </li>
+        <li>
+          <a href="#hours&contact">Hours & Contact</a>
+        </li>
+      </ul>
+      <!-- Cart Icon -->
+      <a href="#">
+        <img
+          src="/imgs/cart.png"
+          class="cart-icon"
+          alt="Cart Icon"
+          onmouseover="this.src='/imgs/cart-hover.png'"
+          onmouseout="this.src='/imgs/cart.png'"
+        />
+      </a>
+      <!-- Sidenav Structure -->
+      <ul class="sidenav" id="mobile-demo">
+        <li>
+          <a href="index.html#products">Products</a>
+        </li>
+        <li>
+          <a href="about-us.html">About Us</a>
+        </li>
+        <li>
+          <a href="visit-us.html">Visit Us</a>
+        </li>
+        <li>
+          <a href="#hours&contact">Hours & Contact</a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="" alt="" />
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Visit Us Section -->
+    <section class="visit-us">
+      <div class="fullscreen-bg">
+        <!-- Background Image -->
+        <img
+          src="/imgs/loc-bg.jpg"
+          alt="Background Image"
+          class="fullscreen-bg__image"
+        />
+        <div class="fullscreen-bg__text">
+          <h1>Store Locations</h1>
+          <p>
+            Welcome to MC Bakery, your haven of delicious delights. Discover our
+            artisanal treats spread across Luzon and indulge in moments of pure
+            culinary bliss and satisfaction.
+          </p>
+        </div>
+      </div>
+      <div class="fullscreen-bg">
+        <!-- Background Image -->
+        <img
+          src="/imgs/grid-bg.jpg"
+          alt="Background Image"
+          class="fullscreen-bg__image"
+        />
+        <!-- Location Grid -->
+        <div class="row">
+          <!-- Location 1: Manila -->
+          <div class="col s12 m6 l3">
+            <div class="location">
+              <img src="/imgs/loc-1.jpg" alt="Manila Location" />
+              <div class="overlay">
+                <h3>Main Street, BGC</h3>
+                <p>Our flagship store located in the heart of Manila.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Location 2: Laguna -->
+          <div class="col s12 m6 l3">
+            <div class="location">
+              <img src="/imgs/loc-2.jpg" alt="Laguna Location" />
+              <div class="overlay">
+                <h3>Lakefront Avenue, Santa Rosa</h3>
+                <p>Visit our serene branch by the lakeside in Laguna.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Location 3: Quezon City -->
+          <div class="col s12 m6 l3">
+            <div class="location">
+              <img src="/imgs/loc-3.jpg" alt="Quezon City Location" />
+              <div class="overlay">
+                <h3>Maginhawa Street, Quezon City</h3>
+                <p>
+                  Explore our cozy bakery nestled in the foodie haven of Quezon
+                  City.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Location 4: Tagaytay -->
+          <div class="col s12 m6 l3">
+            <div class="location">
+              <img src="/imgs/loc-4.jpg" alt="Tagaytay Location" />
+              <div class="overlay">
+                <h3>Tagaytay Ridge, Tagaytay City</h3>
+                <p>
+                  Enjoy fresh pastries with a view at our breezy location in
+                  Tagaytay.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="hours&contact">
+      <div class="footer-row">
+        <div class="footer-column">
+          <img src="/imgs/logo.png" alt="MC Bakery Logo" class="footer-logo" />
+          <h3>MC Bakery</h3>
+          <ul class="store-hrs">
+            <li><strong>STORE HOURS</strong></li>
+            <li>Monday - Friday: 8:00 AM - 8:00 PM</li>
+            <li>Saturday: 8:00 AM - 6:00 PM</li>
+            <li>Sunday: Closed</li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <ul class="footer-select">
+            <li><a href="#!">FAQ</a></li>
+            <li><a href="#!">Press</a></li>
+            <li><a href="#!">Gift Cards</a></li>
+            <li><a href="#!">Subscription</a></li>
+            <li><a href="#!">Help Center</a></li>
+            <li><a href="#!">Privacy Policy</a></li>
+            <li><a href="#!">Terms of Service</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <ul class="footer-contact">
+            <li><strong>Main Branch:</strong></li>
+            <li>123 Main Street BGC, Manila, Philippines</li>
+            <li><strong>Contact Us:</strong></li>
+            <li>
+              Phone:
+              <a class="footer-num" href="tel:+1234567890">(123) 456-7890</a>
+            </li>
+            <li>
+              Landline:
+              <a class="footer-num" href="tel:+6321234567">(02) 123-4567</a>
+            </li>
+            <li>
+              Email:
+              <a class="footer-email" href="mailto:info@mcbakery.com"
+                >info@mcbakery.com</a
+              >
+            </li>
+          </ul>
+          <div class="social-icons">
+            <a href="https://www.facebook.com/MCBakery" target="_blank"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+            <a href="https://www.instagram.com/MCBakery" target="_blank"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a href="https://www.twitter.com/MCBakery" target="_blank"
+              ><i class="fa-brands fa-x-twitter"></i
+            ></a>
+            <a href="https://www.pinterest.com/MCBakery" target="_blank"
+              ><i class="fa-brands fa-pinterest"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 MC Bakery. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <!-- END -->
+
+    <!-- Materialize Javascript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <!-- JavaScript Main -->
+    <script src="script.js"></script>
+
+    <script></script>
+  </body>
+</html>

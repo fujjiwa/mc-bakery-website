@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Materialize CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <!-- Font Awesome CDN -->
+    <script
+      src="https://kit.fontawesome.com/c3fe2a9b2e.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Font Awesome CDNJS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- CSS Main -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Google Icons -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <!-- Title -->
+    <title>MC Bakery</title>
+  </head>
+
+  <body>
+    <!-- START -->
+
+    <!-- Navigation Bar -->
+    <nav class="nav-wrapper navbar-fixed z-depth-0">
+      <!-- Brand Logo -->
+      <a href="index.html" class="left brand-logo" alt="MC Bakery Logo">
+        <img
+          src="/imgs/logo.png"
+          class="responsive-img brand-img hide-on-med-and-down"
+          onmouseover="this.src='/imgs/logo-hover.png'"
+          onmouseout="this.src='/imgs/logo.png'"
+        />
+      </a>
+      <a class="sidenav-trigger" data-target="mobile-demo">
+        <img
+          src="/imgs/logo.png"
+          class="menu-img responsive-img"
+          onmouseover="this.src='/imgs/logo-hover.png'"
+          onmouseout="this.src='/imgs/logo.png'"
+        />
+      </a>
+      <!-- Center Navlinks -->
+      <ul class="hide-on-med-and-down center-nav">
+        <li>
+          <a href="#products">Products</a>
+        </li>
+        <li>
+          <a href="about-us.html">About Us</a>
+        </li>
+        <li>
+          <a href="visit-us.html">Visit Us</a>
+        </li>
+        <li>
+          <a href="#hours&contact">Hours & Contact</a>
+        </li>
+      </ul>
+      <!-- Cart Icon -->
+      <a href="#">
+        <img
+          src="/imgs/cart.png"
+          class="cart-icon"
+          alt="Cart Icon"
+          onmouseover="this.src='/imgs/cart-hover.png'"
+          onmouseout="this.src='/imgs/cart.png'"
+        />
+      </a>
+      <!-- Sidenav Structure -->
+      <ul class="sidenav" id="mobile-demo">
+        <li>
+          <a href="#products">Products</a>
+        </li>
+        <li>
+          <a href="about-us.html">About Us</a>
+        </li>
+        <li>
+          <a href="visit-us.html">Visit Us</a>
+        </li>
+        <li>
+          <a href="#hours&contact">Hours & Contact</a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="" alt="" />
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Slider -->
+    <div class="carousel carousel-slider fullscreen">
+      <!-- Slide 1 -->
+      <div class="carousel-item slider-item">
+        <div class="card">
+          <div class="card-image">
+            <img src="/imgs/img-1.jpg" id="slider-1" />
+          </div>
+          <div class="card-content text-overlay" id="con-1">
+            <div class="flow-text">
+              Artisanal Bakes, <br />
+              Crafted with Love, <br />
+              Delivered with Joy.
+            </div>
+            <a href="#products">
+              <button class="btn-large waves-effect waves-light" id="orderBtn">
+                Order Now
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- Slide 2 -->
+      <div class="carousel-item slider-item">
+        <div class="card">
+          <div class="card-image">
+            <img src="/imgs/img-2.jpg" id="slider-2" />
+          </div>
+          <div class="card-content text-overlay" id="con-2">
+            <div class="flow-text">
+              Indulge Your Senses: <br />
+              Visit Our Bakery Haven
+            </div>
+            <a href="visit-us.html">
+              <button class="btn-large waves-effect waves-light" id="visitBtn">
+                View Locations
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- Slide 3 -->
+      <div class="carousel-item slider-item">
+        <div class="card">
+          <div class="card-image">
+            <img src="/imgs/img-3.jpg" id="slider-3" />
+          </div>
+          <div class="card-content text-overlay" id="con-3">
+            <div class="flow-text">
+              Crafting Sweet Memories: <br />
+              Our Story, Our Passion
+            </div>
+            <a href="about-us.html">
+              <button class="btn-large waves-effect waves-light" id="learnBtn">
+                Learn More
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Products Carousel Section -->
+    <section class="prod-container" id="products">
+      <div class="container flow-text prods-div">
+        <p class="center-align" id="prod-title">Treats for any Ocassion</p>
+      </div>
+      <!-- Product 1 -->
+      <div class="carousel prod-carousel">
+        <div class="carousel-item">
+          <div class="card prod-item">
+            <div class="card-image">
+              <img
+                src="/imgs/prod-1.jpg"
+                class="responsive-img"
+                alt="Product 1"
+              />
+            </div>
+            <div class="card-content">
+              <span class="card-title">Artisanal Breads</span>
+              <p>Sourdough, Multigrain, Baguettes, Rye</p>
+            </div>
+          </div>
+        </div>
+        <!-- Product 2 -->
+        <div class="carousel-item">
+          <div class="card prod-item">
+            <div class="card-image">
+              <img
+                src="/imgs/prod-2.jpg"
+                class="responsive-img"
+                alt="Product 2"
+              />
+            </div>
+            <div class="card-content">
+              <span class="card-title">Pastries & Desserts</span>
+              <p>Croissants, Eclairs, Tarts, Muffins</p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="card prod-item">
+            <div class="card-image">
+              <img
+                src="/imgs/prod-3.jpg"
+                class="responsive-img"
+                alt="Product 3"
+              />
+            </div>
+            <div class="card-content">
+              <span class="card-title">Cakes & Cupcakes</span>
+              <p>Custom Cakes, Celebration Cakes, Cupcakes, Cake Pops</p>
+            </div>
+          </div>
+        </div>
+        <!-- Product 3 -->
+        <div class="carousel-item">
+          <div class="card prod-item">
+            <div class="card-image">
+              <img
+                src="/imgs/prod-4.jpg"
+                class="responsive-img"
+                alt="Product 4"
+              />
+            </div>
+            <!-- Product 4 -->
+            <div class="card-content">
+              <span class="card-title">Savory Bakes</span>
+              <p>Quiches, Savory Pies, Stuffed Breads</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="control-prev" id="prevBtn">
+        <i class="material-icons">chevron_left</i>
+      </button>
+      <button class="control-next" id="nextBtn">
+        <i class="material-icons">chevron_right</i>
+      </button>
+    </section>
+
+    <!-- Delivery & Pickup Options -->
+    <section class="dp-container">
+      <div class="container">
+        <div class="card">
+          <div class="container dp-title-con">
+            <p class="flow-text center dp-title">Delivery & Pickup Options</p>
+          </div>
+          <div class="container dp-desc-con">
+            <p class="flow-text center dp-desc">
+              Experience the convenience of accessing MC Bakery's finest
+              offerings from anywhere. Whether you prefer nationwide shipping,
+              local pickup, or customized catering for your special occasions,
+              we've got you covered. Order now to delight in our delicious
+              creations, effortlessly.
+            </p>
+          </div>
+          <div class="row">
+            <div class="container dp-grid-con">
+              <div class="col s12 m4 dp-grid">
+                <img src="/imgs/dp-1.jpg" />
+                <p class="flow-text">Nationwide Shipping</p>
+              </div>
+              <div class="col s12 m4 dp-grid">
+                <img src="/imgs/dp-2.jpg" />
+                <p class="flow-text">Advance Orders for Local Pick Up</p>
+              </div>
+              <div class="col s12 m4 dp-grid">
+                <img src="/imgs/dp-3.jpg" />
+                <p class="flow-text">Catering & Events</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="hours&contact">
+      <div class="footer-row">
+        <div class="footer-column">
+          <img src="/imgs/logo.png" alt="MC Bakery Logo" class="footer-logo" />
+          <h3>MC Bakery</h3>
+          <ul class="store-hrs">
+            <li><strong>STORE HOURS</strong></li>
+            <li>Monday - Friday: 8:00 AM - 8:00 PM</li>
+            <li>Saturday: 8:00 AM - 6:00 PM</li>
+            <li>Sunday: Closed</li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <ul class="footer-select">
+            <li><a href="#!">FAQ</a></li>
+            <li><a href="#!">Press</a></li>
+            <li><a href="#!">Gift Cards</a></li>
+            <li><a href="#!">Subscription</a></li>
+            <li><a href="#!">Help Center</a></li>
+            <li><a href="#!">Privacy Policy</a></li>
+            <li><a href="#!">Terms of Service</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <ul class="footer-contact">
+            <li><strong>Main Branch:</strong></li>
+            <li>123 Main Street BGC, Manila, Philippines</li>
+            <li><strong>Contact Us:</strong></li>
+            <li>
+              Phone:
+              <a class="footer-num" href="tel:+1234567890">(123) 456-7890</a>
+            </li>
+            <li>
+              Landline:
+              <a class="footer-num" href="tel:+6321234567">(02) 123-4567</a>
+            </li>
+            <li>
+              Email:
+              <a class="footer-email" href="mailto:info@mcbakery.com"
+                >info@mcbakery.com</a
+              >
+            </li>
+          </ul>
+          <div class="social-icons">
+            <a href="https://www.facebook.com/MCBakery" target="_blank"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+            <a href="https://www.instagram.com/MCBakery" target="_blank"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a href="https://www.twitter.com/MCBakery" target="_blank"
+              ><i class="fa-brands fa-x-twitter"></i
+            ></a>
+            <a href="https://www.pinterest.com/MCBakery" target="_blank"
+              ><i class="fa-brands fa-pinterest"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 MC Bakery. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Floating Button -->
+    <div class="fixed-action-btn">
+      <a href="#" class="btn-floating btn-large amber lighten-3">
+        <i class="material-icons black-text">arrow_upward</i>
+      </a>
+    </div>
+
+    <!-- END -->
+
+    <!-- Materialize Javascript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <!-- JavaScript Main -->
+    <script src="script.js"></script>
+
+    <script></script>
+  </body>
+</html>
